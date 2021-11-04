@@ -1,0 +1,99 @@
+{
+	"id": "capexapproval1",
+	"name": "CAPEX_Approval1",
+	"documentation": "CAPEX_Approval1",
+	"contentVersion": "2.0",
+	"stepDefinitions": [{
+		"id": "com.sap.bpm.process.start",
+		"name": "Start"
+	}, {
+		"reference": "/workflows/exercicio.workflow",
+		"constraints": {
+			"occurrence": {
+				"min": 1
+			}
+		},
+		"inputParameters": [{
+			"id": "approvalstep",
+			"name": "approvalstep",
+			"documentation": "Step to approve",
+			"type": "string",
+			"predefinedValue": "LocalManager",
+			"targetVariable": "${context.RequestID}"
+		}],
+		"icon": "sap-icon://accept",
+		"borderColor": "#d58215"
+	}, {
+		"id": "com.sap.bpm.process.end",
+		"name": "End"
+	}],
+	"configurations": {
+		"enablePrincipalPropagation": true
+	},
+	"contextMapping": {
+		"inputContextMapping": [{
+			"sourceExpression": "${context.ResquetId}"
+		}, {
+			"sourceExpression": "${context.Title}"
+		}, {
+			"sourceExpression": "${context.Investiment}"
+		}, {
+			"sourceExpression": "${context.Resqueter}"
+		}, {
+			"sourceExpression": "${context.History}"
+		}, {
+			"sourceExpression": "${context.Internal}"
+		}]
+	},
+	"attributes": [{
+		"id": "RequestID",
+		"label": "RequestID",
+		"type": "string",
+		"value": "${context.ResquetId}"
+	}, {
+		"id": "Title",
+		"label": "Title",
+		"type": "string",
+		"value": "${context.Title}"
+	}, {
+		"id": "Type",
+		"label": "Type",
+		"type": "string",
+		"value": "${context.Investiment.Type}"
+	}, {
+		"id": "Country",
+		"label": "Country",
+		"type": "string",
+		"value": "${context.Investiment.Country}"
+	}, {
+		"id": "ROI",
+		"label": "ROI",
+		"type": "string",
+		"value": "${context.Investiment.ROI}"
+	}, {
+		"id": "CAPEX",
+		"label": "CAPEX",
+		"type": "string",
+		"value": "${context.Investiment.CAPEX}"
+	}, {
+		"id": "OPEX",
+		"label": "OPEX",
+		"type": "string",
+		"value": "${context.investiment.OPEX}"
+	}, {
+		"id": "TotalCost",
+		"label": "TotalCost",
+		"type": "string",
+		"value": "${context.Investiment.TotalCost}"
+	}, {
+		"id": "Currency",
+		"label": "Currency",
+		"type": "string",
+		"value": "${context.investiment.Currency}"
+	}, {
+		"id": "ApprovalStatus",
+		"label": "ApprovalStatus",
+		"type": "string",
+		"value": "${context.Internal.ApprovalStatus}"
+	}]
+}

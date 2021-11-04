@@ -1,0 +1,127 @@
+{
+	"contents": {
+		"8b57ef0e-fe93-48a2-908e-54038107b1dc": {
+			"classDefinition": "com.sap.bpm.process.Model",
+			"id": "capexapproval1.onestepapproval",
+			"template": {
+				"id": "capexapproval1"
+			},
+			"type": "PREDEFINED",
+			"businessKey": "",
+			"subject": "OneStepApproval",
+			"name": "OneStepApproval",
+			"documentation": "OneStepApproval",
+			"lastIds": "6701f4d4-9779-413f-9497-a740d60ddfbf",
+			"events": {
+				"302d9104-2ec3-4786-880f-a52ef4e6c123": {
+					"name": "StartEvent"
+				},
+				"b474e819-24cd-45a5-b3b8-a96bda1dd2a3": {
+					"name": "EndEvent"
+				}
+			},
+			"activities": {
+				"b99b9e06-c877-49c3-aab0-c477a217d9cd": {
+					"name": "exercicio"
+				}
+			},
+			"sequenceFlows": {
+				"622fb7b5-e272-49e9-825b-ebd1cef09a96": {
+					"name": "SequenceFlow1"
+				},
+				"f71065a3-6c8d-4b1a-9316-e141ca168a5f": {
+					"name": "SequenceFlow1"
+				}
+			},
+			"diagrams": {
+				"e9b1d120-d5f5-4fc9-99ba-8a3cd6b48515": {}
+			}
+		},
+		"302d9104-2ec3-4786-880f-a52ef4e6c123": {
+			"classDefinition": "com.sap.bpm.process.StartEvent",
+			"id": "startevent1",
+			"name": "StartEvent"
+		},
+		"b474e819-24cd-45a5-b3b8-a96bda1dd2a3": {
+			"classDefinition": "com.sap.bpm.process.EndEvent",
+			"id": "endevent1",
+			"name": "EndEvent"
+		},
+		"622fb7b5-e272-49e9-825b-ebd1cef09a96": {
+			"classDefinition": "com.sap.bpm.process.SequenceFlow",
+			"id": "sequenceflow1",
+			"name": "SequenceFlow1",
+			"sourceRef": "302d9104-2ec3-4786-880f-a52ef4e6c123",
+			"targetRef": "b99b9e06-c877-49c3-aab0-c477a217d9cd"
+		},
+		"e9b1d120-d5f5-4fc9-99ba-8a3cd6b48515": {
+			"classDefinition": "com.sap.bpm.process.ui.Diagram",
+			"symbols": {
+				"cf30a201-fb74-41ee-93bd-44e35c0abe29": {},
+				"c8b4c232-1dcd-4ba7-922f-ca3335c231a1": {},
+				"2e4be716-5f29-4ec0-a09a-a5a4a1aa5116": {},
+				"3675b099-458f-4e16-b1dc-d1b51d046cb5": {},
+				"cd808e99-c26d-4033-be46-29b182a1cdc7": {}
+			}
+		},
+		"6701f4d4-9779-413f-9497-a740d60ddfbf": {
+			"classDefinition": "com.sap.bpm.process.LastIDs",
+			"sequenceflow": 2,
+			"startevent": 1,
+			"endevent": 1,
+			"activity": 1
+		},
+		"cf30a201-fb74-41ee-93bd-44e35c0abe29": {
+			"classDefinition": "com.sap.bpm.process.ui.StartEventSymbol",
+			"x": 146,
+			"y": 12,
+			"width": 32,
+			"height": 32,
+			"object": "302d9104-2ec3-4786-880f-a52ef4e6c123"
+		},
+		"c8b4c232-1dcd-4ba7-922f-ca3335c231a1": {
+			"classDefinition": "com.sap.bpm.process.ui.EndEventSymbol",
+			"x": 146,
+			"y": 204,
+			"width": 32,
+			"height": 32,
+			"object": "b474e819-24cd-45a5-b3b8-a96bda1dd2a3"
+		},
+		"2e4be716-5f29-4ec0-a09a-a5a4a1aa5116": {
+			"classDefinition": "com.sap.bpm.process.ui.SequenceFlowSymbol",
+			"points": "162,44 162,94",
+			"sourceSymbol": "cf30a201-fb74-41ee-93bd-44e35c0abe29",
+			"targetSymbol": "3675b099-458f-4e16-b1dc-d1b51d046cb5",
+			"object": "622fb7b5-e272-49e9-825b-ebd1cef09a96"
+		},
+		"b99b9e06-c877-49c3-aab0-c477a217d9cd": {
+			"classDefinition": "com.sap.bpm.process.Activity",
+			"stepTypeId": "workflow.exercicio",
+			"id": "activity1",
+			"name": "exercicio",
+			"documentation": "exercicio kpmg"
+		},
+		"3675b099-458f-4e16-b1dc-d1b51d046cb5": {
+			"classDefinition": "com.sap.bpm.process.ui.ActivitySymbol",
+			"x": 12,
+			"y": 94,
+			"width": 300,
+			"height": 60,
+			"object": "b99b9e06-c877-49c3-aab0-c477a217d9cd"
+		},
+		"f71065a3-6c8d-4b1a-9316-e141ca168a5f": {
+			"classDefinition": "com.sap.bpm.process.SequenceFlow",
+			"id": "sequenceflow2",
+			"name": "SequenceFlow1",
+			"sourceRef": "b99b9e06-c877-49c3-aab0-c477a217d9cd",
+			"targetRef": "b474e819-24cd-45a5-b3b8-a96bda1dd2a3"
+		},
+		"cd808e99-c26d-4033-be46-29b182a1cdc7": {
+			"classDefinition": "com.sap.bpm.process.ui.SequenceFlowSymbol",
+			"points": "162,154 162,204",
+			"sourceSymbol": "3675b099-458f-4e16-b1dc-d1b51d046cb5",
+			"targetSymbol": "c8b4c232-1dcd-4ba7-922f-ca3335c231a1",
+			"object": "f71065a3-6c8d-4b1a-9316-e141ca168a5f"
+		}
+	}
+}
