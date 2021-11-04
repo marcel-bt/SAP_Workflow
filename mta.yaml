@@ -1,0 +1,17 @@
+_schema-version: "3.2"
+ID: Workflow
+version: 0.0.1
+modules:
+- name: workflow-ex
+  type: com.sap.application.content
+  path: workflow-ex
+  requires:
+  - name: workflow
+    parameters:
+      content-target: true
+resources:
+- name: workflow
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: workflow
+    service-plan: lite
