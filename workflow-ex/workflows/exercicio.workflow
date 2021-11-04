@@ -47,7 +47,10 @@
 		"11a9b5ee-17c0-4159-9bbf-454dcfdcd5c3": {
 			"classDefinition": "com.sap.bpm.wfs.StartEvent",
 			"id": "startevent1",
-			"name": "StartEvent1"
+			"name": "StartEvent1",
+			"sampleContextRefs": {
+				"ed68a367-6688-4651-bd25-f3ad0f6e77a3": {}
+			}
 		},
 		"2798f4e7-bc42-4fad-a248-159095a2f40a": {
 			"classDefinition": "com.sap.bpm.wfs.EndEvent",
@@ -191,6 +194,10 @@
 			"sourceSymbol": "a789e4c2-0354-464c-b1f3-977b2bc0c594",
 			"targetSymbol": "53e54950-7757-4161-82c9-afa7e86cff2c",
 			"object": "24bb2f84-d8fc-428f-b78c-09f4140ab62f"
+		},
+		"ed68a367-6688-4651-bd25-f3ad0f6e77a3": {
+			"classDefinition": "com.sap.bpm.wfs.SampleContext",
+			"id": "default-start-context"
 		}
 	}
 }
