@@ -130,7 +130,7 @@
 		},
 		"278c9814-24a5-4007-b659-d40a3429cc7a": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
-			"points": "194,42 244,42",
+			"points": "194,39 229,39",
 			"sourceSymbol": "a5d268c9-797d-442b-898e-32e17102ba33",
 			"targetSymbol": "aa5e4f88-8247-4c32-94b5-fb4a2c97a04c",
 			"object": "e27eb0fa-70f1-43b6-b379-a6585774c491"
@@ -145,8 +145,8 @@
 		},
 		"aa5e4f88-8247-4c32-94b5-fb4a2c97a04c": {
 			"classDefinition": "com.sap.bpm.wfs.ui.UserTaskSymbol",
-			"x": 244,
-			"y": 12,
+			"x": 229,
+			"y": 6,
 			"width": 100,
 			"height": 60,
 			"object": "95c67b35-8b62-42f3-aa93-c981efef494e"
@@ -160,7 +160,7 @@
 		},
 		"46b5dec5-7b21-4f48-aad9-d74159900a29": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
-			"points": "294,39 458,39",
+			"points": "279,36 458,36",
 			"sourceSymbol": "aa5e4f88-8247-4c32-94b5-fb4a2c97a04c",
 			"targetSymbol": "a789e4c2-0354-464c-b1f3-977b2bc0c594",
 			"object": "dd311f49-2ea3-4ce1-9695-7f6ec6794fd9"
