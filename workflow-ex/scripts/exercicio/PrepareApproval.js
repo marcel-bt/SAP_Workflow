@@ -45,7 +45,7 @@ if (!$.context.internal.workflowTerminated) {
     $.context.internal.approvalStatus = "In Approval";
 }
 
-/**** Prepare Input Payload to Execute Rules ******/
+/************ Prepare Input Payload to Execute Rules ****************/
 var details = {
 	"ApprovalStep": $.context.approvalstep,
 	"BusinessUnit": $.context.Investment.BusinessUnit,
