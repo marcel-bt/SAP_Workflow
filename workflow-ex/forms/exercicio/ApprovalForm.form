@@ -73,7 +73,7 @@
                 },
                 {
                     "id": "capex",
-                    "type": "string",
+                    "type": "float",
                     "label": "CAPEX",
                     "readOnly": false,
                     "value": "${context.Investment.CAPEX}",
@@ -83,7 +83,7 @@
                 },
                 {
                     "id": "opex",
-                    "type": "string",
+                    "type": "float",
                     "label": "OPEX",
                     "readOnly": false,
                     "value": "${context.Investment.OPEX}",
@@ -93,7 +93,7 @@
                 },
                 {
                     "id": "total_cost",
-                    "type": "string",
+                    "type": "float",
                     "label": "Total Cost",
                     "readOnly": false,
                     "value": "${context.Investment.TotalCost}",
@@ -103,7 +103,7 @@
                 },
                 {
                     "id": "roi",
-                    "type": "string",
+                    "type": "float",
                     "label": "ROI",
                     "readOnly": false,
                     "value": "${context.Investment.ROI}",
